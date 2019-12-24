@@ -1,0 +1,20 @@
+.sidebar
+  .user
+    .user__name
+      = current_user.name
+    .user__edit
+      = link_to new_group_path do
+        =icon 'fas','edit', class: 'user__edit__icon1'
+      = link_to edit_user_path(current_user) do
+        =icon 'fas','cog', class: 'user__edit__icon2'
+
+  .group
+    - current_user.groups.each do |group|
+      .group__items
+        = link_to '#' do
+          .group__items__name
+            = group.name
+          .group__items__message
+            おなかすいた
+          .group__items__time
+            2019/12/20
