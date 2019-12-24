@@ -39,6 +39,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'did_you_mean'
+  gem 'pry-rails'
 end
 
 group :development do
@@ -56,3 +57,5 @@ gem 'haml-rails'
 gem 'font-awesome-sass'
 gem 'devise'
 gem 'rails-i18n', '~> 5.1'
+gem 'carrierwave'
+gem 'mini_magick'

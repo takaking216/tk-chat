@@ -11,10 +11,10 @@
   .group
     - current_user.groups.each do |group|
       .group__items
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .group__items__name
             = group.name
           .group__items__message
-            おなかすいた
+            = group.show_last_message
           .group__items__time
-            2019/12/20
+            = group.show_last_message_created_at
