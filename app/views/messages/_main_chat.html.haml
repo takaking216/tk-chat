@@ -11,8 +11,7 @@
       Edit
 
   .chat
-    .messages
-      = render @messages
+    = render @messages
     
   .footer
     = form_for [@group, @message] do |f|
