@@ -55,6 +55,10 @@
         padding-top: 25px;
         background-color: purple;;
       }
+      &__user{
+        font-size: 12px;
+        background-color: pink;
+      }
       &__time{
         font-size: 10px;
         padding-bottom:40px;
@@ -220,6 +224,10 @@
           font-size: 12px;
           padding-top: 25px;
           background-color: purple;;
+        }
+        &__user{
+          font-size: 12px;
+          background-color: pink;
         }
         &__time{
           font-size: 10px;

@@ -14,10 +14,14 @@ class Group < ApplicationRecord
   end
   
   def show_last_message_created_at
-    if (last_message_created_at = messages.last.created_at).present?
-      last_message_created_at.strftime("%Y年%m月%d日 %H時%M分")
-    else
-      ''
+    if (last_message_created_at = messages.last).present?
+      last_message_created_at.created_at.strftime("%Y年%m月%d日 %H時%M分")
+    end
+  end
+
+  def show_last_message_name
+    if (last_message_name = messages.last).present?
+      last_message_name.user.name
     end
   end
 end
