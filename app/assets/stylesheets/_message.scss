@@ -9,7 +9,7 @@
   left:300px;
   height:100vh;
   width:calc(100vw - 300px);
-  background-image:url("d3a442df4ee361bfd39f65457ec858f8aa553f44.jpg");
+  background-image:image-url("d3a442df4ee361bfd39f65457ec858f8aa553f44.jpg");
   background-size:cover;
 }
 .sidebar{
@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image:url("index_cof.png");
+    background-image:image-url("index_cof.png");
     background-position:right bottom;
     // border: solid 3px #228B22;
 
@@ -137,7 +137,7 @@
   .chat{
     height: calc(100vh - 190px);
     background-size:cover;
-    background-image:url("2626559136-coffee-and-sweets-photography-hd-wallpaper-2560x1440-8666-q3R-2560x1440-MM-100.jpg");
+    background-image:image-url("2626559136-coffee-and-sweets-photography-hd-wallpaper-2560x1440-8666-q3R-2560x1440-MM-100.jpg");
     overflow-y: scroll;
     padding:0 40px 0;
 
