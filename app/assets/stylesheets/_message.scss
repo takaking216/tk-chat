@@ -9,7 +9,8 @@
   left:300px;
   height:100vh;
   width:calc(100vw - 300px);
-  background-image:url("Riomaggiore-Liguria-Italy-The-beautyful-village-of-Riomaggiore-as-you-can-see-it-from-the-see-vith-colorful-houses-reflecting-themselves-in-the-water-Blue-sky.jpg");
+  background-image:url("d3a442df4ee361bfd39f65457ec858f8aa553f44.jpg");
+  background-size:cover;
 }
 .sidebar{
   height:100vh;
@@ -17,27 +18,30 @@
   position: fixed;
 
   .user{
+    color:menu;
     height: 100px;
     background-color: menu;
     padding: 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: solid 3px #228B22;
+    background-image:url("index_cof.png");
+    background-position:right bottom;
+    // border: solid 3px #228B22;
 
     &__name{
-      font-size: 16px;
-      border-bottom: solid 3px orange;
+      font-size: 25px;
+      // border-bottom: solid 3px orange;
     }
     &__edit{
-      font-size:16px;      
+      font-size:25px;      
 
       &__icon1{
-        color:black;
+        color:menu;
       }
       
       &__icon2{
-        color:black;
+        color:menu;
       }
     }
   }
@@ -45,7 +49,7 @@
   .group{
     padding: 0 12.5px 0;
     height: calc(100vh - 100px);
-    background-color: #A52A2A;
+    background-color: gray;
     overflow-y: scroll;
 
     &__items{
@@ -59,15 +63,15 @@
         margin-top:20px;
         padding:15px 5px 0;
         color:black;
-        background: -webkit-linear-gradient(to right,orange, transparent);
-        background: linear-gradient(to right, orange, transparent);
+        background: -webkit-linear-gradient(to right,#99CCCC, transparent);
+        background: linear-gradient(to right, #99CCCC, transparent);
       }
       &__message{
         padding-left:5px;
         font-size: 12px;
         padding-top: 10px;
         color:black;
-        border-bottom: solid 3px #228B22;
+        // border-bottom: solid 3px #228B22;
       }
       &__user{
         padding-left:5px;
@@ -92,43 +96,48 @@
 
   .header{
     height: 100px;
-    background-color: #FFA500;
-    border: solid 3px #4169E1;
+    background-color: #CC9999;
+    // border: solid 3px #4169E1;
     
     .headers{
-      padding:20px 0 0 40px;
+      padding:20px 155px 0 40px;
       position: relative;
 
       &__group{
         font-size: 20px;
-        background: -webkit-linear-gradient(to right, menu, transparent);
-        background: linear-gradient(to right, menu, transparent);
+        // background: -webkit-linear-gradient(to right,#99CCCC, transparent);
+        background: linear-gradient(to right, #99CCCC, transparent);
+        background-color:menu;
+        // background: -webkit-linear-gradient(to right, menu, transparent);
+        // background: linear-gradient(to right, menu, transparent);
       }
       &__member{
         font-size: 12px;
-        background: -webkit-linear-gradient(to right, #FFCC66, transparent);
-        background: linear-gradient(to right, #FFCC66, transparent);
+        background-color:menu;
+        // background: -webkit-linear-gradient(to right, #FFCC66, transparent);
+        // background: linear-gradient(to right, #FFCC66, transparent);
       }
     }
 
     &__edit{
-      height:40px;
+      height:50px;
       font-size:16px;
       color:menu;
-      background-color:#228B22;
-      line-height: 40px;
-      padding:0 20px;
+      background-color:#99CCCC;
+      line-height: 50px;
+      padding:0 30px;
       border:solid 1px lightgray;
       position: absolute;
       right: 40px;
-      top:28px;
-      border-radius: 0.5em;
+      top:20px;
+      // border-radius: 0.5em;
     }
   }
 
   .chat{
     height: calc(100vh - 190px);
-    background-image:url("20_napori_1.jpg");
+    background-size:cover;
+    background-image:url("2626559136-coffee-and-sweets-photography-hd-wallpaper-2560x1440-8666-q3R-2560x1440-MM-100.jpg");
     overflow-y: scroll;
     padding:0 40px 0;
 
@@ -137,21 +146,37 @@
       margin-top:35px;
       display: flex;
       border-radius: 0.5em;
-      background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
-      background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+      background-color:#99CCCC;
+      // background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+      // background: linear-gradient(to right, rgb(230, 90, 90), transparent);
       
       &__name{
         font-size: 16px;
       }
       &__time{
+        width: 100%;
         padding:3px 0 0 10px;
         font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        &__delete{
+          padding: 5px 15px;
+          background-color: gray;
+          border-radius: 0.5em;
+          a{
+            color: menu;
+          }
+        }
       }
+
     }
     &__message{
       padding:12px 5px 0;
       border-radius: 0.5em;
       background-color:menu;
+      img{
+        padding-left: 25%;
+      }
 
       &__content{
         height: 55px;
@@ -162,8 +187,8 @@
   }
   .footer{
     height: 90px;
-    background-color: #3CB371;
-    border: solid 3px #FF6600;
+    background-color: #99CCCC;
+    // border: solid 3px #FF6600;
     width: calc(100vw - 300px);
     padding:20px 40px;
     position: fixed;
@@ -193,7 +218,7 @@
       width:100px;
       line-height: 50px;
       text-align: center;
-      background-color: #38AEF0;
+      background-color: #CC9999;
       color:white;
       position: absolute;
       right: 40px;
@@ -204,80 +229,53 @@
 
 @media screen and (max-width: 896px) {
   .back{
-    position:fixed;
-    left:300px;
+    left:250px;
     height:100vh;
-    width:calc(100vw - 300px);
-    background-image:url("Riomaggiore-Liguria-Italy-The-beautyful-village-of-Riomaggiore-as-you-can-see-it-from-the-see-vith-colorful-houses-reflecting-themselves-in-the-water-Blue-sky.jpg");
+    width:calc(100vw - 250px);
   }
   .sidebar{
     height:100vh;
     width:250px;
-    position: fixed;
   
     .user{
       height: 80px;
-      background-color: menu;
       padding: 0 20px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border: solid 3px #228B22;
   
       &__name{
-        font-size: 16px;
-        border-bottom: solid 3px orange;
+        font-size: 25px;
       }
       &__edit{
-        font-size:16px;      
-  
-        &__icon1{
-          color:black;
+        font-size:25px;      
+          }
         }
-        
-        &__icon2{
-          color:black;
-        }
-      }
-    }
   
     .group{
       padding: 0 12.5px 0;
       height: calc(100vh - 80px);
-      background-color: #A52A2A;
-      overflow-y: scroll;
   
       &__items{
         height: 125px;
         width: 225px;
-        background-color: menu;
-        border-radius: 0.5em;
   
         &__name{
           font-size: 15px;
           margin-top:20px;
           padding:15px 5px 0;
-          color:black;
-          background: -webkit-linear-gradient(to right,orange, transparent);
-          background: linear-gradient(to right, orange, transparent);
+
         }
         &__message{
           padding-left:5px;
           font-size: 12px;
           padding-top: 10px;
-          color:black;
-          border-bottom: solid 3px #228B22;
         }
         &__user{
           padding-left:5px;
           font-size: 12px;
-          color:black;
         }
         &__time{
           padding-left:5px;
           font-size: 10px;
           padding-bottom:40px;
-          color:black;
         }
       }
     }
@@ -286,38 +284,27 @@
   .main{
     height: 100vh;
     width: calc(100vw - 250px);
-    position: fixed;
     left: 250px;
   
     .header{
       height: 80px;
-      background-color: #FFA500;
-      border: solid 3px #4169E1;
       
       .headers{
         padding:12px 0 0 20px;
-        position: relative;
   
         &__group{
           font-size: 20px;
-          background: -webkit-linear-gradient(to right, menu, transparent);
-          background: linear-gradient(to right, menu, transparent);
         }
         &__member{
           font-size: 12px;
-          background: -webkit-linear-gradient(to right, #FFCC66, transparent);
-          background: linear-gradient(to right, #FFCC66, transparent);
         }
       }
   
       &__edit{
         height:40px;
         font-size:16px;
-        color:menu;
-        background-color:#228B22;
         line-height: 40px;
         padding:0 20px;
-        border:solid 1px lightgray;
         position: absolute;
         right: 20px;
         top:18px;
@@ -327,17 +314,12 @@
   
     .chat{
       height: calc(100vh - 150px);
-      background-image:url("20_napori_1.jpg");
       overflow-y: scroll;
       padding:0 20px 0;
   
       &__user{
         padding:0 5px 0;
         margin-top:15px;
-        display: flex;
-        border-radius: 0.5em;
-        background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
-        background: linear-gradient(to right, rgb(230, 90, 90), transparent);
         
         &__name{
           font-size: 16px;
@@ -349,8 +331,6 @@
       }
       &__message{
         padding:12px 5px 0;
-        border-radius: 0.5em;
-        background-color:menu;
   
         &__content{
           height: 30px;
@@ -361,8 +341,6 @@
     }
     .footer{
       height: 70px;
-      background-color: #3CB371;
-      border: solid 3px #FF6600;
       width: calc(100vw - 250px);
       padding:7px 20px;
       position: fixed;
@@ -371,7 +349,6 @@
       &__message{
         height: 50px;
         width: calc(100vw - 400px);
-        background-color:#fafafa;
         position: relative;
   
         &__items{
@@ -392,8 +369,6 @@
         width:80px;
         line-height: 50px;
         text-align: center;
-        background-color: #38AEF0;
-        color:white;
         position: absolute;
         right: 20px;
         top:7px;
@@ -408,7 +383,6 @@
     left:135px;
     height:100vh;
     width:calc(100vw - 135px);
-    background-image:url("Riomaggiore-Liguria-Italy-The-beautyful-village-of-Riomaggiore-as-you-can-see-it-from-the-see-vith-colorful-houses-reflecting-themselves-in-the-water-Blue-sky.jpg");
   }
   .sidebar{
     height:100vh;
@@ -417,67 +391,44 @@
   
     .user{
       height: 100px;
-      background-color: menu;
       padding-left:3px;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border: solid 3px #228B22;
   
       &__name{
-        font-size: 13px;
-        border-bottom: solid 3px orange;
+        font-size: 20px;
       }
       &__edit{
         font-size:15px;      
-  
-        &__icon1{
-          color:black;
-        }
-        
-        &__icon2{
-          color:black;
-        }
       }
     }
   
     .group{
       padding: 0 5px 0;
       height: calc(100vh - 100px);
-      background-color: #A52A2A;
       overflow-y: scroll;
   
       &__items{
         height: 125px;
         width: 260px;
-        background-color: menu;
-        border-radius: 0.5em;
   
         &__name{
           font-size: 15px;
           margin-top:20px;
           padding:15px 5px 0;
-          color:black;
-          background: -webkit-linear-gradient(to right,orange, transparent);
-          background: linear-gradient(to right, orange, transparent);
         }
         &__message{
           padding-left:5px;
           font-size: 12px;
           padding-top: 10px;
-          color:black;
-          border-bottom: solid 3px #228B22;
         }
         &__user{
           padding-left:5px;
           font-size: 12px;
-          color:black;
         }
         &__time{
           padding-left:5px;
           font-size: 10px;
           padding-bottom:40px;
-          color:black;
         }
       }
     }
@@ -491,8 +442,6 @@
   
     .header{
       height: 100px;
-      background-color: #FFA500;
-      border: solid 3px #4169E1;
       
       .headers{
         padding:20px 0 0 5px;
@@ -500,34 +449,25 @@
   
         &__group{
           font-size: 20px;
-          background: -webkit-linear-gradient(to right, menu, transparent);
-          background: linear-gradient(to right, menu, transparent);
         }
         &__member{
           font-size: 12px;
-          background: -webkit-linear-gradient(to right, #FFCC66, transparent);
-          background: linear-gradient(to right, #FFCC66, transparent);
         }
       }
   
       &__edit{
         height:40px;
         font-size:16px;
-        color:menu;
-        background-color:#228B22;
         line-height: 40px;
         padding:0 10px;
-        border:solid 1px lightgray;
         position: absolute;
         right: 5px;
         top:28px;
-        border-radius: 0.5em;
       }
     }
   
     .chat{
       height: calc(100vh - 190px);
-      background-image:url("20_napori_1.jpg");
       overflow-y: scroll;
       padding:0 5px 0;
   
@@ -535,8 +475,6 @@
         padding:0 5px 0;
         margin-top:15px;
         display: flex;
-        border-radius: 0.5em;
-        background-color:rgb(230, 90, 90);
         
         &__name{
           font-size: 14px;
@@ -548,8 +486,6 @@
       }
       &__message{
         padding:12px 5px 0;
-        border-radius: 0.5em;
-        background-color:menu;
   
         &__content{
           height: 30px;
@@ -560,8 +496,6 @@
     }
     .footer{
       height: 90px;
-      background-color: #3CB371;
-      border: solid 3px #FF6600;
       width: calc(100vw - 135px);
       padding:20px 5px;
       position: fixed;
@@ -570,7 +504,6 @@
       &__message{
         height: 50px;
         width: calc(100vw - 200px);
-        background-color:#fafafa;
         position: relative;
   
         &__items{
@@ -590,9 +523,6 @@
         height:50px;
         width:65px;
         line-height: 50px;
-        text-align: center;
-        background-color: #38AEF0;
-        color:white;
         position: absolute;
         right: 5px;
         top:20px;

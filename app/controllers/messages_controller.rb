@@ -19,6 +19,14 @@ class MessagesController < ApplicationController
     end
   end
 
+  def destroy
+    @group = Group.find(params[:group_id])
+    @message = Message.find(params[:id])
+     if @message.user_id == current_user.id && @message.destroy #destroyメソッドを使用し対象のツイートを削除する。
+      redirect_to group_messages_path(@group)
+     end
+   end
+
   private
 
   def message_params

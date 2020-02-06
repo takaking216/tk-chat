@@ -8,6 +8,9 @@ $(function(){
         </div>
         <div class="chat__user__time">
           ${message.created_at}
+          <div class="chat__user__time__delete">
+            <a rel="nofollow" data-method="delete" href="/groups/4/messages/19">削除</a>
+          </div>
         </div>
       </div>
       <div class="chat__message">
@@ -25,6 +28,9 @@ $(function(){
           </div>
           <div class="chat__user__time">
             ${message.created_at}
+            <div class="chat__user__time__delete">
+              <a rel="nofollow" data-method="delete" href="/groups/4/messages/19">削除</a>
+            </div>
           </div>
           </div>
         <div class="chat__message">
@@ -41,6 +47,9 @@ $(function(){
           </div>
           <div class="chat__user__time">
             ${message.created_at}
+            <div class="chat__user__time__delete">
+              <a rel="nofollow" data-method="delete" href="/groups/4/messages/19">削除</a>
+            </div>
           </div>
           </div>
         <div class="chat__message">
