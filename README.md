@@ -9,7 +9,7 @@
  
 ***DEMO:***
  
-![Demo](https://gyazo.com/94f0960078b014e8d77a906d746b02f0)
+https://gyazo.com/94f0960078b014e8d77a906d746b02f0
  
 ## Features
  
