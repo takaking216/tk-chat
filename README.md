@@ -11,6 +11,7 @@
  ・テストアカウント
  email: test@gmail.com
  passward: qwqwqwqw
+ 
 ***DEMO:***
  
 https://gyazo.com/94f0960078b014e8d77a906d746b02f0
@@ -28,7 +29,7 @@ https://gyazo.com/94f0960078b014e8d77a906d746b02f0
  ・SNS認証、SNS連携
  ・動画、音源投稿
  等を考えています。
- 
+
 ## Features
  
 - haml/scss記法と、命名規則BEMを使ったマークアップ
